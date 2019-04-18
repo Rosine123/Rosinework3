@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ColorYellow"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="38dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="107dp"
+            android:layout_height="112dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="131dp"
+            android:layout_marginLeft="131dp"
+            app:srcCompat="@drawable/logo" />
+
+        <Button
+            android:id="@+id/ButtonLogin"
+            android:layout_width="145dp"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="113dp"
+            android:layout_marginLeft="113dp"
+            android:layout_marginTop="440dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="serif"
+            android:text="LOGIN"
+            android:textAlignment="center"
+            android:textColor="@color/ColorYellow"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/txtUsername"
+            android:layout_width="129dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="225dp"
+            android:text="USERNAME"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtPassword"
+            android:layout_width="129dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="327dp"
+            android:text="PASSWORD"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/EditUsername"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="223dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginRight="41dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/usernamehint"/>
+
+        <EditText
+            android:id="@+id/EditPassword"
+            android:layout_width="168dp"
+            android:layout_height="62dp"
+            android:layout_alignBottom="@+id/txtPassword"
+            android:layout_marginLeft="380px"
+            android:hint="Enter  Password"
+            android:inputType="textPassword" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
